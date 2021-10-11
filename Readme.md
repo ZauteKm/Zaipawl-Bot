@@ -1,4 +1,4 @@
-# auto-filter-bot-v3
+# Zaipawl-Bot (Track/Copy)
 This Telegram Bot is [Adv-Auto-Filter-Bot-V2](https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2) and [Media-Search-Bot](https://github.com/Mahesh0253/Media-Search-bot) Modified Version.
 
 ---
@@ -34,8 +34,7 @@ This Telegram Bot is [Adv-Auto-Filter-Bot-V2](https://github.com/CrazyBotsz/Adv-
 * `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
 * `ADMIN_ID`: Control BroadCast.
-* `DATABASE_1`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/nj-lJfkgb6w) Broadcast Group Database.
-* `DATABASE_2`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/nj-lJfkgb6w)
+* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/nj-lJfkgb6w)
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/nj-lJfkgb6w)
 * `BROADCAST`: Value should be `True` or `False`. Broadcast with Forward Tag or as Copy.(Without Forward Tag).
 * `BROADCAST_CHANNEL`: ID of a Channel (user Notification).
@@ -66,7 +65,7 @@ Once a poster is fetched from OMDB , poster is saved to DB to reduce duplicate r
 <details><summary><b>Deploy to Heroku</b></summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/ZauteKm/auto-filter-bot-v3">
+<a href="https://heroku.com/deploy?template=https://github.com/ZauteKm/Zaipawl-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
@@ -77,7 +76,7 @@ Once a poster is fetched from OMDB , poster is saved to DB to reduce duplicate r
 <br/>
 
 <p align="left">
-<a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FZauteKm%2Fauto-filter-bot-v3"
+<a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FZauteKm%2FZaipawl-Bot"
 ">
      <img height="30px" src="https://railway.app/button.svg">
   </a>
@@ -118,9 +117,9 @@ Check [`sample_config.py`](sample_config.py) before editing [`config.py`](config
 * If you don't want to create a channel or group, use your chat ID / username as the channel ID. When you send a file to a bot, it will be saved in the database.
 
 ## Support
-Contact Me On [Telegram](https://t.me/zautebot)
+Contact Me On [Telegram](https://t.me/mizotelegram)
 
-[Update Channel](https://t.me/tgbotsproject)
+[Update Channel](https://t.me/zaipawl/247)
 
 ## Thanks to 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
