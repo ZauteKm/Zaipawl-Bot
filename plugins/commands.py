@@ -60,14 +60,12 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**Khawngaihin Ka Channel hi join phawt la, chuan min hmang thei ang!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
-                            ],
-                            [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}"),
+                                InlineKeyboardButton("Channel 📢", url=invite_link.invite_link)
                             ]
                         ]
                     ),
@@ -118,7 +116,7 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Khawngaihin Ka Channel hi join phawt la, chuan min hmang thei ang!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -137,7 +135,7 @@ async def start(bot, message):
                 InlineKeyboardButton("🔎 Search Here", switch_inline_query_current_chat=''),
                 InlineKeyboardButton("Go Inline 🗣️", switch_inline_query='')
                 ],[
-                InlineKeyboardButton("🖲️ Commands", callback_data="help"),
+                InlineKeyboardButton("🖲️ Help", callback_data="help"),
                 InlineKeyboardButton("About Bot 🧑‍🔧", callback_data="about")
                 ],[
                 InlineKeyboardButton("🤖 More Bots @BotzListBot 🤖", url="https://t.me/BotzListBot")
@@ -354,7 +352,7 @@ async def bot_info(bot, message):
         [
             
             InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-            InlineKeyboardButton('Channel 📢', url=f'https://t.me/TGBotsProJect')
+            InlineKeyboardButton('Group 👥', url=f'https://t.me/SolfaZirna')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
