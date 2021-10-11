@@ -38,9 +38,11 @@ COLLECTION_NAME = 'channel_files'  # If you are using the same database, then us
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
+**Chibai le! Kei hi [Fakna hla](https://t.me/zaipawl) Music Track & Zaipawl SolFa Copy PDF Bot ka ni e.**
 
-Here you can search files in inline mode. Just press follwing buttons and start searching.
+Inline mode hmangin Track & Copy i zawng zung zung thei a, Chuan i Track & Copy duh chu a thupui chauh ziakin lo thawn la, ka zawng hmu zung zung thei bawk.
+
+**Min hmandân túr kim chang i hriat duh chuan a hnuaia HELP Button kha hmet in emaw, /help tih lo thawn rawh.**
 """
 
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
