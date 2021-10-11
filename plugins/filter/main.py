@@ -43,7 +43,7 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Khawngaihin Ka Channel hi join phawt la, chuan min hmang thei ang!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -67,7 +67,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        zaute_km = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        zaute_km = f"**🗂️ Title:** {search}\n\n**📤 Uploaded by {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -129,7 +129,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        zaute_km = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        zaute_km = f"**🗂️ Title:** {search}\n\n**📤 Uploaded by {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -292,7 +292,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                    InlineKeyboardButton('Channel 📢', url=f'https://t.me/TGBotsProJect')
+                    InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
                 ]
                 ]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -301,7 +301,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                    InlineKeyboardButton('Channel 📢', url=f'https://t.me/TGBotsProJect')
+                    InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -325,7 +325,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                        InlineKeyboardButton('Channel 📢', url=f'https://t.me/TGBotsProJect')
+                        InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
                     ]
                     ]
                 
@@ -357,7 +357,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                        InlineKeyboardButton('Channel 📢', url=f'https://t.me/TGBotsProJect')
+                        InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
                     ]
                     ]
                 
