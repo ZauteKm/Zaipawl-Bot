@@ -14,9 +14,9 @@ COPY requirements.txt /requirements.txt
 # Installing Requirements
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /auto-filter-bot-v3
-WORKDIR /auto-filter-bot-v3
+RUN mkdir /Zaipawl-Bot
+WORKDIR /Zaipawl-Bot
 COPY start.sh /start.sh
 
-# Running auto-filter-bot-v3
+# Running Zaipawl-Bot
 CMD ["/bin/bash", "/start.sh"]
