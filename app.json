@@ -1,6 +1,6 @@
 {
-    "name": "auto-filter-bot-v3",
-    "description": "A greater auto filter bot with features like IMDb support,inline mode,broadcast feature etc..",
+    "name": "Zaipawl-Bot",
+    "description": "He Telegram Bot hi Mizo Gospel Music Track & Sol-fa Copy PDF Search & Auto Filter Bot a ni.",
     "logo":"https://avatars.githubusercontent.com/u/77600757?v=4",
     "keywords": [
       "telegram",
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/ZauteKm/auto-filter-bot-v3",
-    "repository": "https://github.com/zautekm/auto-filter-bot-v3",
+    "website": "https://telegram.me/zaipawlbot",
+    "repository": "https://github.com/ZauteKm/Zaipawl-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -50,7 +50,7 @@
         },
         "START_MSG": {
             "description": "Welcome message for start command",
-            "value": "**Hi, I'm [auto-filter-bot-v3](https://github.com/zautekm/auto-filter-bot-v3)**\n\nHere you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.",
+            "value": "**Chibai le! Kei hi [Fakna hla](https://t.me/zaipawl) Music Track & Zaipawl SolFa Copy PDF Bot ka ni e.\n\n**Inline mode hmangin Track & Copy i zawng zung zung thei a, Chuan i Track & Copy duh chu a thupui chauh ziakin lo thawn la, ka zawng hmu zung zung thei bawk.\n\n**Min hmang dan tur kim chang i hriat duh chuan a hnuaia HELP button kha hmet in emaw, /help tih lo thawn rawh.**",
             "required": false
         },
         "USE_CAPTION_FILTER": {
