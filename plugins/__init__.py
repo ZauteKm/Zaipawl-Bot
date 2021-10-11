@@ -26,29 +26,29 @@ from .channel import (
 )
 
 HELP = """
-**Basic Commands**
+<b><u>Min hman dan tûr:</u></b>
 
-/start : Check Bot Alive.
+Kei hi *Music Track leh Sol-Fa Copy Bot* ka ni.
 
-**Commands (Only Bot Owner)**
+**i).** A hnuaia **Search Here** tih kha i hmet zeuh anga, chuan i thil duh chuan i Search anga, i hmuh hunah i hmet tawp ang.
+**ii).** Track emaw Copy i duh chu a **thupui chauh ziakin** lo thawn la, ka zawng hmu zung zung thei bawk.
 
-/broadcast: Replay Any Message or Media.
-/stats: User Status.
-/ban:  Click ban more info.
-/unban: Click unban more info.
-/banned: Banned User Details.
-/total: How Many Files Added In Database.
-/logger:  Get Logs.
-/delete: Delete File From Database.
+[Hetah hmet la 👈](https://t.me/zaipawl/247) Min hmandân túr kimchang ilo chhiar dawn nia.
+
+Khawngaihin [@zaipawl](https://t.me/zaipawl/247) Official Channel hi join ang che! I Subscribe loh chuan min hmang thei lovang!
 
 """
 
 ABOUT = """
 **About Bot 🤖**
 
-**▷🤖 Name: [auto-filter-bot-v3](https://github.com/zautekm/auto-filter-bot-v3).
+**▷🤖 Hming: [Fakna Hla Bot](https://t.me/SolfaZirna/167).
     
-▷👨‍💻 Creator : [Zaute Km](https://t.me/ZauteKm)
+▷👨‍💻 Creator : [Zaute Km](https://t.me/ZauteKm/593).
+
+▷📢 Channel: [Fakna Rimawi](https://t.me/zaipawl/247).
+
+▷👥 Group: [Join Rawh](https://t.me/SolfaZirna/167).
 
 ▷🌏 Language : Python3
 
