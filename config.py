@@ -54,7 +54,7 @@ default_start_msg = """
 
 Inline mode hmangin Track & Copy i zawng zung zung thei a, Chuan i Track & Copy duh chu a thupui chauh ziakin lo thawn la, ka zawng hmu zung zung thei bawk.
 
-**Min hmang dan tur kim chang i hriat duh chuan a hnuaia HELP Button kha hmet in emaw, /help tih lo thawn rawh.**
+**Min hmandân túr kim chang i hriat duh chuan a hnuaia HELP Button kha hmet in emaw, /help tih lo thawn rawh.**
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
