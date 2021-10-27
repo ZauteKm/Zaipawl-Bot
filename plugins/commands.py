@@ -140,7 +140,7 @@ async def start(bot, message):
                 InlineKeyboardButton("📜 Help", callback_data="help"),
                 InlineKeyboardButton("About 🤔", callback_data="about")
                 ],[
-                InlineKeyboardButton("♻️ Mizo InfoTel Channel ℹ️👈", url="https://t.me/mizotginfotel")
+                InlineKeyboardButton("👉♻️ Mizo InfoTel Channel ℹ️👈", url="https://t.me/mizotginfotel")
                 ]]
             )
         )
