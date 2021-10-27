@@ -291,8 +291,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [
                 [
-                    InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                    InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
+                    InlineKeyboardButton('👨‍💻 Dev', url=f'{DEV_CHANNEL}'),
+                    InlineKeyboardButton('Channel 📜', url=f'https://t.me/zaipawl/247')
+                ],
+                [
+                    InlineKeyboardButton('🔎 Search Here 🔍', switch_inline_query_current_chat='')
                 ]
                 ]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -300,8 +303,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                    InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
+                    InlineKeyboardButton('👨‍💻 Dev', url=f'{DEV_CHANNEL}'),
+                    InlineKeyboardButton('Channel 📜', url=f'https://t.me/zaipawl/247')
+                ],
+                [
+                    InlineKeyboardButton('🔎 Search Here 🔍', switch_inline_query_current_chat='')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -324,8 +330,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                        InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
+                        InlineKeyboardButton('👨‍💻 Dev', url=f'{DEV_CHANNEL}'),
+                        InlineKeyboardButton('Channel 📜', url=f'https://t.me/zaipawl/247')
+                    ],
+                    [
+                        InlineKeyboardButton('🔎 Search Here 🔍', switch_inline_query_current_chat='')
                     ]
                     ]
                 
@@ -356,8 +365,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-                        InlineKeyboardButton('Channel 📢', url=f'https://t.me/zaipawl/247')
+                        InlineKeyboardButton('👨‍💻 Dev', url=f'{DEV_CHANNEL}'),
+                        InlineKeyboardButton('Channel 📜', url=f'https://t.me/zaipawl/247')
+                    ],
+                    [
+                        InlineKeyboardButton('🔎 Search Here 🔍', switch_inline_query_current_chat='')
                     ]
                     ]
                 
@@ -373,4 +385,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("Isn't it a little more interesting? 👀",show_alert=True)
+        await query.answer("A diltu hi Nangmah i ni lo 🤣🤣",show_alert=True)
