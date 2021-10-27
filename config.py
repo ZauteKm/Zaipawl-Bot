@@ -50,9 +50,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 default_start_msg = """
-**Chibai le! Kei hi [Fakna hla](https://t.me/zaipawl) Music Track & Zaipawl SolFa Copy PDF Bot ka ni e.**
-
-Inline mode hmangin Track & Copy i zawng zung zung thei a, Chuan i Track & Copy duh chu a thupui chauh ziakin lo thawn la, ka zawng hmu zung zung thei bawk.
+**Chibai le! Kei hi [Fakna hla](https://t.me/zaipawl) Track & SolFa Copy PDF Bot ka ni e.**
 
 **Min hmandân túr kim chang i hriat duh chuan a hnuaia HELP Button kha hmet in emaw, /help tih lo thawn rawh.**
 """
