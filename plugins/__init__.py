@@ -28,14 +28,12 @@ from .channel import (
 HELP = """
 <b><u>Min hman dan tûr:</u></b>
 
-Kei hi **Music Track leh Sol-Fa Copy Bot** ka ni.
-
-1). A hnuaia **Search** tih kha i hmet zeuh anga, chuan i thil duh chuan i Search anga, i hmuh hunah i hmet tawp ang.
+1). A hnuaia **Search** tih kha i hmet zeuh anga, chuan i thil duh chu i Search anga, i hmuh hunah i hmet tawp ang.
 2). Track emaw Copy i duh chu a **thupui chauh ziakin** lo thawn la, ka zawng hmu zung zung thei bawk.
 
-**Min hmandân túr kimchang: [Hetah](https://t.me/zaipawl/247) ilo chhiar dawnnia.**
+**▷ Read [here](https://t.me/zaipawl/247) for more Info.**
 
-Khawngaihin [@zaipawl](https://t.me/zaipawl/247) Official Channel hi join ang che! I Join loh chuan min hmang thei lovang!
+Channel [@zaipawl](https://t.me/zaipawl/247) hi join ang che! I Join loh chuan min hmang thei lovang!
 
 """
 
