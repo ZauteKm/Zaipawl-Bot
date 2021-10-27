@@ -128,3 +128,15 @@ Contact Me On [Telegram](https://t.me/mizotelegram)
 
 ## License
 Code released under [The GNU General Public License](LICENSE).
+
+## Bot Owner Commands
+- `/channel`: Send basic information of channel.
+- `/broadcast`: Send the Broadcast.
+- `/stats`: Users Details.
+- `/ban`: Banned the Users.
+- `/unban`: Unbanned the Users.
+- `/banned`: Banned Duration.
+- `/total`: Show total files in database.
+- `/delete`: Delete file from Database.
+- `/logger`: Send Log File.
+- `/index`: Save channel or group files.
