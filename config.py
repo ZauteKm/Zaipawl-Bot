@@ -58,7 +58,7 @@ Inline mode hmangin Track & Copy i zawng zung zung thei a, Chuan i Track & Copy 
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
-FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name:</b> <code>{file_name}</code>\n\n<b>[👉 Music Zirna & Track/Copy](https://t.me/solfazirna) hi engtik lai pawhin a join theih ang.</b>\n\n<b>Size:</b> {file_size}\n<b>Others:</b> {file_caption}."")
+FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>File Name:</b> <code>{file_name}</code>\n\n<b>[👉 Fakna Rimâwi Huang](https://t.me/solfazirna) hi join la, Music zirna leh Track & Copy Dilna Group a ni e.</b>\n\n<b>Size:</b> {file_size}\n<b>Others:</b> {file_caption}.")
 OMDB_API_KEY = environ.get("OMDB_API_KEY", "http://www.omdbapi.com/?i=tt3896198&apikey=4f08a979")
 if FILE_CAPTION.strip() == "":
     CUSTOM_FILE_CAPTION=None
