@@ -97,8 +97,8 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/BotzListBot')
+                        InlineKeyboardButton('Search', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('Group', url='https://t.me/solfazirna')
                     ],
                     [
                         InlineKeyboardButton('👨‍💻 Developer @ZauteKm 📢', url=f'{DEV_CHANNEL}')
@@ -138,7 +138,7 @@ async def start(bot, message):
                 InlineKeyboardButton("🖲️ Help", callback_data="help"),
                 InlineKeyboardButton("About Bot 🧑‍🔧", callback_data="about")
                 ],[
-                InlineKeyboardButton("🤖 More Bots @BotzListBot 🤖", url="https://t.me/BotzListBot")
+                InlineKeyboardButton("🎼 Fakna Rimâwi Huang 🎶", url="https://t.me/solfazirna")
                 ]]
             )
         )
