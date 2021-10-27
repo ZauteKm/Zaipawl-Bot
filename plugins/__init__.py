@@ -31,7 +31,7 @@ HELP = """
 1). A hnuaia **Search** tih kha i hmet zeuh anga, chuan i thil duh chu i Search anga, i hmuh hunah i hmet tawp ang.
 2). Track emaw Copy i duh chu a **thupui chauh ziakin** lo thawn la, ka zawng hmu zung zung thei bawk.
 
-**▷ Read [here](https://t.me/zaipawl/247) for more Info.**
+**▷ Click [here](https://t.me/zaipawl/247) for more Information.**
 
 Channel [@zaipawl](https://t.me/zaipawl/247) hi join ang che! I Join loh chuan min hmang thei lovang!
 
