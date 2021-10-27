@@ -21,7 +21,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from config import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, DEV_CHANNEL, BROADCAST_CHANNEL, DB_URL, SESSION, ADMIN_ID    
 from plugins.utils import Media, get_file_details 
 from plugins.broadcast import broadcast
-from plugins import ABOUT
+from plugins import ABOUT, HELP
 from plugins.channel import handle_user_status
 from database import Database
 from pyrogram.errors import UserNotParticipant
@@ -65,7 +65,7 @@ async def start(bot, message):
                         [
                             [
                                 InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}"),
-                                InlineKeyboardButton("Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("Channel ♻️", url=invite_link.invite_link)
                             ]
                         ]
                     ),
@@ -101,7 +101,7 @@ async def start(bot, message):
                         InlineKeyboardButton('Group', url='https://t.me/solfazirna')
                     ],
                     [
-                        InlineKeyboardButton('👨‍💻 Developer @ZauteKm 📢', url=f'{DEV_CHANNEL}')
+                        InlineKeyboardButton('Dev @ZauteKm', url=f'{DEV_CHANNEL}')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -132,13 +132,13 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("🔎 Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("Go Inline 🗣️", switch_inline_query='')
+                InlineKeyboardButton("Search", switch_inline_query_current_chat=''),
+                InlineKeyboardButton("Go Inline", switch_inline_query='')
                 ],[
-                InlineKeyboardButton("🖲️ Help", callback_data="help"),
-                InlineKeyboardButton("About Bot 🧑‍🔧", callback_data="about")
+                InlineKeyboardButton("Help", callback_data="help"),
+                InlineKeyboardButton("About", callback_data="about")
                 ],[
-                InlineKeyboardButton("🎼 Fakna Rimâwi Huang 🎶", url="https://t.me/solfazirna")
+                InlineKeyboardButton("Fakna Rimâwi Huang", url="https://t.me/solfazirna")
                 ]]
             )
         )
@@ -351,8 +351,11 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('👨‍💻 Developer', url=f'{DEV_CHANNEL}'),
-            InlineKeyboardButton('Group 👥', url=f'https://t.me/SolfaZirna')
+            InlineKeyboardButton('Dev', url=f'{DEV_CHANNEL}'),
+            InlineKeyboardButton('Group', url=f'https://t.me/SolfaZirna')
+        ],
+        [
+            InlineKeyboardButton('Search Here', switch_inline_query_current_chat='')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
