@@ -132,13 +132,13 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("Go Inline", switch_inline_query='')
+                InlineKeyboardButton("👉🎵 Fakna Rimâwi Huang 🎙️👈", url="https://t.me/solfazirna")
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
+                InlineKeyboardButton("🔎 Search", switch_inline_query_current_chat=''),
+                InlineKeyboardButton("Go Inline 🔍", switch_inline_query='')
                 ],[
-                InlineKeyboardButton("Fakna Rimâwi Huang", url="https://t.me/solfazirna")
+                InlineKeyboardButton("📜 Help", callback_data="help"),
+                InlineKeyboardButton("About 🤔", callback_data="about")
                 ]]
             )
         )
@@ -351,11 +351,26 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('Dev', url=f'{DEV_CHANNEL}'),
-            InlineKeyboardButton('Group', url=f'https://t.me/SolfaZirna')
+            InlineKeyboardButton('👨‍💻 Dev', url=f'{DEV_CHANNEL}'),
+            InlineKeyboardButton('Group 👥', url=f'https://t.me/SolfaZirna')
         ],
         [
-            InlineKeyboardButton('Search Here', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎 Search Here 🔍', switch_inline_query_current_chat='')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+
+@Client.on_message(filters.command('help'))
+async def bot_info(bot, message):
+    buttons = [
+        [
+            
+            InlineKeyboardButton('👨‍💻 Dev', url=f'{DEV_CHANNEL}'),
+            InlineKeyboardButton('Group 👥', url=f'https://t.me/SolfaZirna')
+        ],
+        [
+            InlineKeyboardButton('🔎 Search Here 🔍', switch_inline_query_current_chat='')
+        ]
+        ]
+    await message.reply(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
