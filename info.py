@@ -34,7 +34,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://img4.goodfon.com/original/1920x1200/6/e1/devushka-vzgliad-stul.jpg https://img4.goodfon.com/original/1920x1200/f/1c/jack-russell-model-litso-ruka-postel.jpg https://img4.goodfon.com/original/2560x1600/c/30/kirill-zakirov-model-poza-plate-nogi-kreslo-okno-stil.jpg https://img4.goodfon.com/original/1920x1200/f/4d/alexis-monroe-devushka-blondinka-krasotka-seksualnaia-privle.jpg https://img5.goodfon.com/original/2560x1600/d/a8/oleg-klimin-model-blondinka-krasotka-seksi-sidit-poza-figura.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/69c0de0edbb79cc580d27.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -57,7 +57,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mizotelegram')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n<b>Size:</b> {file_size}\n\n{file_caption}\n\n<b>[© Sᴇʀɪᴇs & Mᴏᴠɪᴇ Oғғɪᴄɪᴀʟ ™](https://t.me/joinchat/prE6ALN6x2hkY2E1)")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n<b>Size:</b> {file_size}\n\n{file_caption}\n\n<b>[© Fakna Rimâwi Huang ™](https://t.me/zaipawl)")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🎬 Title:</b> <a href={url}>{title}</a>\n<b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n<b>🎭 Genres:</b> {genres}\n\n<b>☀️ Languages:</b> {languages}\n<b>🎛 Countries:</b> {countries}\n<b>🎥 Director:</b> {director}\n<b>📝 Writers:</b> {writer}\n\n<b><a href='https://t.me/joinchat/prE6ALN6x2hkY2E1'>© Sᴇʀɪᴇs & Mᴏᴠɪᴇ Oғғɪᴄɪᴀʟ ™</a></b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), False)
