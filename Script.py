@@ -1,15 +1,12 @@
 class script(object):
     START_TXT = """Chibai le! {},
-
 Kei hi <a href=https://t.me/{}>{}</a>, ka ni e!
 
-<b>Track/Copy ka pe thei reng che a nia.</b>
+<b>Fakna Track/Copy ka pe thei reng che a nia.</b>
 
-Min hmandân túr kim chang i hriat duh chuan
-<a href=https://t.me/zaipawl/247>Hetah hmet la</a>, i hre thei mai ang."""
+Min hmandân túr kim chang i hriat duh chuan <a href=https://t.me/zaipawl/247>Hetah hmet la</a>, i hre thei mai ang."""
 
-    HELP_TXT = """Hey {}
-
+    HELP_TXT = """Hey! {},
 <b>A hnuaia Modules ah hian ka puih theihna tur che a awm.</b>"""
 
     ABOUT_TXT = """<b>➥ My name: {}
