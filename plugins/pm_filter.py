@@ -451,6 +451,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -468,6 +469,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -482,6 +484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -492,6 +495,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.SOURCE_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -503,6 +507,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.MANUELFILTER_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -513,6 +518,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.BUTTON_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -523,6 +529,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.AUTOFILTER_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -533,6 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.CONNECTION_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -544,6 +552,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.EXTRAMOD_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -554,6 +563,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ADMIN_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -572,6 +582,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = get_size(free)
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -591,6 +602,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         free = get_size(free)
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
       )
@@ -696,7 +708,8 @@ async def auto_filter(client, msg, spoll=False):
     else:
         await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
-        await msg.message.delete()
+        await asyncio.sleep(30)
+        await m.delete()
         
 
 async def advantage_spell_chok(msg):
