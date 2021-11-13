@@ -694,7 +694,7 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url']
         )
     else:
-        cap = f"<b>🎵 Title: {search}</b>\n<b>👤 Requested By:</b> {message.from_user.mention}\n\n<b><a href='https://t.me/zaipawl/247'>© Fakna Rimâwi Huang ™</a></b>"
+        cap = f"<b>🎵 Title: {search}</b>\n<b>👤 Requested By:</b> {message.from_user.mention}\n\n<b><a href='https://t.me/zaipawl/247'>© {message.chat.title} ™</a></b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
