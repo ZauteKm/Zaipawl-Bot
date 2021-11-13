@@ -33,11 +33,11 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🔰 Group', url='https://t.me/solfazirna'),
-                InlineKeyboardButton('Channel 🎬', url='https://t.me/zaipawl'),
+                InlineKeyboardButton('group', url='https://t.me/solfazirna'),
+                InlineKeyboardButton('channel', url='https://t.me/zaipawl'),
             ],
             [
-                InlineKeyboardButton('❗ Infomation ❗', url=f"https://t.me/{temp.U_NAME}?start=start"),
+                InlineKeyboardButton('⌦ Close the Menu ⌫', callback_data="close_data"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -53,19 +53,22 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add me to Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Updates 🤖', url='https://t.me/Zaipawl')
+            InlineKeyboardButton('search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('updates', url='https://t.me/zaipawl')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('About 🤔', callback_data='about')
+            InlineKeyboardButton('help', callback_data='help'),
+            InlineKeyboardButton('about', callback_data='about')
+            ],[
+            InlineKeyboardButton('⌦ Close the Menu ⌫', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_text(
+            text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
+            quote=True,
             parse_mode='html'
         )
         return
@@ -94,19 +97,22 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add me to Your Group ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Updates 🤖', url='https://t.me/zaipawl')
+            InlineKeyboardButton('search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('updates', url='https://t.me/zaipawl')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('About 🤔', callback_data='about')
+            InlineKeyboardButton('help', callback_data='help'),
+            InlineKeyboardButton('about', callback_data='about')
+            ],[
+            InlineKeyboardButton('⌦ Close the Menu ⌫', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await message.reply_text(
+            text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
+            quote=True,
             parse_mode='html'
         )
         return
