@@ -17,7 +17,7 @@ Min hmandân túr kim chang i hriat duh chuan <a href=https://t.me/zaipawl/247>H
 ➥ Bot Server: AWS
 ➥ Build Status: v1.0.1 [ Beta ]
 
-<a href='https://t.me/joinchat/prE6ALN6x2hkY2E1'>© Sᴇʀɪᴇs Sᴛᴜᴅɪᴏ Oғғɪᴄɪᴀʟ ™</a></b>"""
+<a href='https://t.me/zaipawl'>© Fakna Rimâwi Huang ™</a></b>"""
 
     SOURCE_TXT = """<b>NOTE:</b>
 - Zaipawl Source Code Open a ni. 
@@ -43,15 +43,15 @@ Min hmandân túr kim chang i hriat duh chuan <a href=https://t.me/zaipawl/247>H
 - Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. Dingdi hi admin-ah dah phawt rawh.
+1. ZaipawlBot hi admin-ah dah phawt rawh.
 2. Group Admin chauhin filter hi a siam thei.
 3. Alert buttons limit hi 64 characters a ni.
 
 <b>Commands leh Hmandân:</b>
-• /filter - <code>Group-a filter siamna.</code>
-• /filters - <code>Group-a filters Save zawng zawng.</code>
-• /del - <code>Filter save pakhat chiah delete-na.</code>
-• /delall - <code>Filter save zawng zawng delete-na. (Group Owner Chauh)</code>"""
+• /filter - Group-a filter siamna.
+• /filters - Group-a filters Save zawng zawng.
+• /del - Filter save pakhat chiah delete-na.
+• /delall - Filter save zawng zawng delete-na. (Group Owner Chauh)"""
 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
@@ -59,7 +59,7 @@ Min hmandân túr kim chang i hriat duh chuan <a href=https://t.me/zaipawl/247>H
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Dingdi supports buttons with any telegram media type.
+2. ZaipawlBot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format.
 
 <b>URL buttons:</b>
@@ -103,7 +103,7 @@ Paste some texts or documents on a website!
 • /paste [reply] - paste the replied text on Pasty
 
 <b>NOTE:</b>
-• Dingdi should have admin privillage.
+• zaipawlbot should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
@@ -115,7 +115,7 @@ Do as you wish with telegra.ph module!
 • /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
 
 <b>NOTE:</b>
-• Dingdi should have admin privillage.
+• zaipawlbot should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
@@ -129,7 +129,7 @@ Get information about something!
 • /json - get the json details of a message.
 
 <b>NOTE:</b>
-• Dingdi should have admin privillage.
+• zaipawlbot should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
@@ -141,7 +141,7 @@ Translate texts to a specific language!
 • /tr [language code][reply] - translate replied message to specific language.
 
 <b>NOTE:</b>
-• Dingdi should have admin privillage.
+• ZaipawlBot should have admin privillage.
 • These commands works on both pm and group.
 • Dingdi can translate texts to 200+ languages."""
 
@@ -154,7 +154,7 @@ Search many things without leaving telegram!
 • /search  - get the film information from various sources.
 
 <b>NOTE:</b>
-• Dingdi should have admin privillage.
+• zaipawlbot should have admin privillage.
 • More search tools can be found on inline.
 • Those commands works on both pm and group."""
 
