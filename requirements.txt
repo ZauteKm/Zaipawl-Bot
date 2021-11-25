@@ -8,6 +8,9 @@ telegraph==1.4.1
 googletrans==3.1.0a0
 asyncio==3.4.3
 aiohttp==3.7.4
+youtube_dl
+youtube_search_python
+youtube_search
 aiofiles
 pykeyboard
 requests
