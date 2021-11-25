@@ -184,9 +184,7 @@ He Modules te hi Bot Owner chauhin a ti thei.
 
     FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
 
-__🗣 Groups aṭanga Movie i rawn Request kha, Hetah ka pek theihna tur che in ka Official Channel i join hmasak phawt a ngai. Chuan, Groups aṭanga i Movie rawn Request te hi Private ah ka pe zêl thei ang che 🙈__
-
-__🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
+__🗣 Groups aṭanga Track/Copy i rawn Request kha, Hetah ka pek theihna tur che in ka Official Channel i join hmasak phawt a ngai. Chuan, Groups aṭanga Track/Copy i rawn Request te hi Private ah ka pe zêl thei ang che 🙈__
 
 **👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
 
