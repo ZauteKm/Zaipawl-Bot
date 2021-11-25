@@ -55,13 +55,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('updates', url='https://t.me/zaipawl')
-            ],[
             InlineKeyboardButton('help', callback_data='help'),
             InlineKeyboardButton('about', callback_data='about')
             ],[
-            InlineKeyboardButton('⌦ Close the Menu ⌫', callback_data='close_data')
+            InlineKeyboardButton('search here music', switch_inline_query_current_chat='')
+            ],[
+            InlineKeyboardButton('Zaipawl', url='https://t.me/joinchat/c7IfwgC6AtdiOGM1'),
+            InlineKeyboardButton('Solfa Zirna', url='https://t.me/joinchat/zqPG0JH27t9jMzI1')
+            ],[
+            InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -90,7 +92,8 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Khawngaihin Ka Channel hi join phawt la, chuan min hmang thei ang!**",
+            text=script.FORCESUB_TXT,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -99,13 +102,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('updates', url='https://t.me/zaipawl')
-            ],[
             InlineKeyboardButton('help', callback_data='help'),
             InlineKeyboardButton('about', callback_data='about')
             ],[
-            InlineKeyboardButton('⌦ Close the Menu ⌫', callback_data='close_data')
+            InlineKeyboardButton('search here music', switch_inline_query_current_chat='')
+            ],[
+            InlineKeyboardButton('Zaipawl', url='https://t.me/joinchat/c7IfwgC6AtdiOGM1'),
+            InlineKeyboardButton('Solfa Zirna', url='https://t.me/joinchat/zqPG0JH27t9jMzI1')
+            ],[
+            InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
