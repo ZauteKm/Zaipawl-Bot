@@ -695,7 +695,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>{search}</b>"
+        cap = f"<b>🎵 Title: {search}</b>\n<b>👤 Requested By:</b> {message.from_user.mention}\n\n<b><a href='https://t.me/zaipawl/247'>© {message.chat.title} ™</a></b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -711,9 +711,9 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
         except Exception as e:
             logger.exception(e)
-            await message.reply_photo(photo="https://telegra.ph/file/c318d9d240a07cc8301a8.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_photo(photo="https://telegra.ph/file/c318d9d240a07cc8301a8.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
         
