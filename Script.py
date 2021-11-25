@@ -38,7 +38,7 @@ Min hmandân túr kim chang i hriat duh chuan <a href=https://t.me/zaipawl/247>H
 - <a href='https://t.me/chanchinbu'>Chanchin Bu</a>
 - <a href='https://t.me/joinchat/KfaibJOuootkNWQ1'>Hnaruak Post-Na</a>"""
 
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+    MANUALFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Dingdi will respond whenever a keyword is found the message
 
@@ -90,16 +90,73 @@ Min hmandân túr kim chang i hriat duh chuan <a href=https://t.me/zaipawl/247>H
 • /disconnect  - <code>Group Disconnect lehna.</code>
 • /connections - <code>Connections zawng² enna.</code>"""
 
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+    AUTO_MANUAL_TXT = """Help: <b>Filters</b>
+
+<b>Select a filters type Below:</b>"""
+
+    PASTE_TXT = """Help: <b>Paste</b>
+
+Paste some texts or documents on a website!
+
+<b>Commands and Usage:</b>
+• /paste [text] - paste the given text on Pasty
+• /paste [reply] - paste the replied text on Pasty
 
 <b>NOTE:</b>
-These are the extra features of Dingdi
+• Dingdi should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
 
-<b>Commands leh Hmandân:</b>
-• /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+    TGRAPH_TXT = """Help: <b>TGraph & Paste</b>
+
+Do as you wish with telegra.ph module!
+
+<b>Commands and Usage:</b>
+• /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph.
+
+<b>NOTE:</b>
+• Dingdi should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
+
+    INFO_TXT = """Help: <b>Information</b>
+
+Get information about something!
+
+<b>Commands and Usage:</b>
+• /id - get id of a specifed user.
+• /info  - get information about a user.
+• /json - get the json details of a message.
+
+<b>NOTE:</b>
+• Dingdi should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
+
+    GTRANS_TXT = """Help: <b>Google Translator</b>
+
+Translate texts to a specific language!
+
+<b>Commands and Usage:</b>
+• /tr [language code][reply] - translate replied message to specific language.
+
+<b>NOTE:</b>
+• Dingdi should have admin privillage.
+• These commands works on both pm and group.
+• Dingdi can translate texts to 200+ languages."""
+
+    SEARCH_TXT = """Help: <b>IMDb</b>
+
+Search many things without leaving telegram!
+
+<b>Commands and Usage:</b>
+• /imdb  - get the film information from IMDb source.
+• /search  - get the film information from various sources.
+
+<b>NOTE:</b>
+• Dingdi should have admin privillage.
+• More search tools can be found on inline.
+• Those commands works on both pm and group."""
 
     ADMIN_TXT = """Help: <b>Admin Mods</b>
 
@@ -122,8 +179,16 @@ He Modules te hi Bot Owner chauhin a ti thei.
     STATUS_TXT = """<b>Total Files:</b> <code>{}</code>
 <b>Total Users:</b> <code>{}</code>
 <b>Total Chats:</b> <code>{}</code>
-<b>Used Storage:</b> <code>{}</code> 𝙼𝚒𝙱
-<b>Free Storage:</b> <code>{}</code> 𝙼𝚒𝙱"""
+<b>Used Storage:</b> <code>{}</code> MiB
+<b>Free Storage:</b> <code>{}</code> MiB"""
+
+    FORCESUB_TXT = """**♦️ READ THIS INSTRUCTION ♦️**
+
+__🗣 Groups aṭanga Movie i rawn Request kha, Hetah ka pek theihna tur che in ka Official Channel i join hmasak phawt a ngai. Chuan, Groups aṭanga i Movie rawn Request te hi Private ah ka pe zêl thei ang che 🙈__
+
+__🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈__
+
+**👇 JOIN THIS CHANNEL & TRY AGAIN 👇**"""
 
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
