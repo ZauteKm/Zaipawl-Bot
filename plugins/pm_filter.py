@@ -445,8 +445,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('search here music', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('Zaipawl', url='https://t.me/joinchat/c7IfwgC6AtdiOGM1'),
-            InlineKeyboardButton('Solfa Zirna', url='https://t.me/joinchat/zqPG0JH27t9jMzI1')
+            InlineKeyboardButton('Zaipawl', url='https://t.me/joinchat/T20JRlQ1bqwljNu6'),
+            InlineKeyboardButton('Solfa Zirna', url='https://t.me/solfazirna')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
