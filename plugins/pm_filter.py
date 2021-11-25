@@ -781,9 +781,15 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
         except Exception as e:
             logger.exception(e)
-            await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+         put = await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+         await asyncio.sleep(300)
+         await put.delete()
+         await message.delete()
     else:
-        await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+         pit = await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+         await asyncio.sleep(300)
+         await pit.delete()
+         await message.delete()
     if spoll:
         await msg.message.delete()
         
