@@ -783,10 +783,7 @@ async def auto_filter(client, msg, spoll=False):
             logger.exception(e)
             await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-      opps = message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-      sleep(5)
-      opps.delete()
-      message.delete()
+        await message.reply_photo(photo="https://telegra.ph/file/5ca387cf9f686aae4ef06.png", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
         
