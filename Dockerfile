@@ -14,8 +14,8 @@ COPY requirements.txt /requirements.txt
 # Installing Requirements
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /Zaipawl-Bot
-WORKDIR /Zaipawl-Bot
+RUN mkdir /ZaipawlBot
+WORKDIR /ZaipawlBot
 COPY start.sh /start.sh
 
 # Running Zaipawl-Bot
